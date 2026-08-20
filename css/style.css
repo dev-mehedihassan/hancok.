@@ -367,10 +367,18 @@ body{
     line-height: 72px;
     letter-spacing: 3%;
     color: #FFFFFF;
+    position: relative;
 }
 
-.counter_item h4 span{
-    color: #FF4655;
+.counter_item h4::after{
+    position: absolute;
+    content: "";
+    bottom: 11px;
+    right: -14px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #FF4655;
 }
 
 .counter_item p{
@@ -453,3 +461,46 @@ body{
     background: transparent;
 }
 /* ====== Popular Section Style End ====== */
+
+/* ====== Live Stream Section Style Start ====== */
+#live_stream{
+    padding: 90px 0;
+}
+
+.live_stream_title{
+    width: 446px;
+    margin-bottom: 69px;
+}
+
+.live_stream_title h3{
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 56px;
+    letter-spacing: 7%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.live_stream_title h3::after{
+    position: absolute;
+    content: "";
+    bottom: 11px;
+    right: 165px;
+    width: 120px;
+    height: 3px;
+    background: #FF4655;
+}
+
+.live_stream_video_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.live_stream_video_wrapper img{
+    width: 427px;
+    height: 275px;
+    object-fit: cover;
+}
+/* ====== Live Stream Section Style End ====== */
