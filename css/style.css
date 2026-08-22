@@ -721,4 +721,69 @@ body{
 /* ====== Live Stream Section Style End ====== */
 
 /* ====== Sale Section Style Start ====== */
+#sale{
+    padding: 90px 0;
+}
+
+.sale_title{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.sale_title h3{
+    width: 454px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 46px;
+    letter-spacing: 7%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.sale_title h3::after{
+    position: absolute;
+    content: "";
+    bottom: 8px;
+    right: 100px;
+    width: 150px;
+    height: 3px;
+    background: #FF4655;
+}
+
+.sale_item{
+    width: 315px;
+    height: 568px;
+}
+
+.sale_item img{
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    margin-bottom: 18px;
+}
+
+.sale_item_content h4{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.sale_item_content h5{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.sale_item_content h6{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
 /* ====== Sale Section Style End ====== */
