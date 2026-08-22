@@ -496,6 +496,41 @@ body{
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-bottom: 61px;
+}
+
+.tournament_item{
+    position: relative;
+    filter: grayscale(100%);
+    transition: all linear 0.3s;
+}
+
+.tournament_item:hover{
+    transform: scale(1.05);
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.play_Btn{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+
+.play_Btn i{
+    font-size: 22px;
+    color: #FFFFFF;
 }
 
 .live_stream_video_wrapper img{
@@ -503,4 +538,187 @@ body{
     height: 275px;
     object-fit: cover;
 }
+
+.tournament_content{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 24px;
+    left: 25px;
+    width: 377px;
+    height: 55px;
+    background: transparent;
+    transition: all linear 0.3s;
+}
+
+.tournament_content .tournament_left h4{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0;
+    margin-bottom: 6px;
+}
+
+.tournament_content .tournament_left span{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    opacity: 0;
+}
+
+.tournament_right1 h5{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: right;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.tournament_right1 h5::after{
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    left: -8px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #FF4655;
+}
+.tournament_right2 h5{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: right;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.tournament_right2 h5::after{
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    left: -9px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #FF4655;
+}
+.tournament_right3 h5{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: right;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.tournament_right3 h5::after{
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    left: -8px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #FF4655;
+}
+
+.tournament_item:hover .play_Btn, .tournament_item:hover .tournament_content .tournament_left h4, .tournament_item:hover .tournament_content .tournament_left span{
+    opacity: 1;
+}
+
+.match_title h3{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 9%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.match_content_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 58.5px;
+}
+
+.match_item{
+    max-width: 1096px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+}
+
+.team1{
+    width: 426px;
+    background-image: url(../images/shape1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    column-gap: 121px;
+}
+
+.team1 h4{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.match_item h5{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 59px;
+    letter-spacing: 15%;
+    color: #FFFFFF;
+}
+
+.team2{
+    width: 426px;
+    background-image: url(../images/shape2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 121px;
+}
+
+.team2 h4{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 /* ====== Live Stream Section Style End ====== */
+
+/* ====== Sale Section Style Start ====== */
+/* ====== Sale Section Style End ====== */
